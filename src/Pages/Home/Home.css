@@ -1,0 +1,21 @@
+.page-wrapper {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.page {
+    background-color: chartreuse;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: #CCCC00;
+    font-size: 2em;
+}
+
+.h1 {
+    font-family: cursive;
+}
