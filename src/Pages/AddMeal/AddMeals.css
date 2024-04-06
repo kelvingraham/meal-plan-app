@@ -1,0 +1,58 @@
+.page-wrapper {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.page {
+    background-color: #AAAAAA;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.add-meals-btn {
+    background-color: #50c878;
+    font-size: 1em;
+    margin: 1vh;
+    margin-left: 75vw;
+    margin-right: 5vw;
+}
+
+.meal-search-input {
+    font-size: 1em;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.h1 {
+    text-align: center;
+}
+
+.meal-wrapper {
+    border: 2px;
+    border-radius: 5px;
+}
+
+.meal-ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.meal-li {
+    height: 10vh;
+    border: 0.5vh solid black;
+    border-radius: 2vh;
+    margin: 3vh;
+    background-color: #888888;
+}
+
+.meal-li-div {
+    margin: 1vh;
+    display: flex;
+    justify-content: center;
+}
+
+.meal-li-title {
+    font-weight: bold;
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../../Button';
 import './Home.css';
+import { Link } from 'react-router-dom';
 
 const manageMealsButtonText = "Manage Meals"
 const planDayButtonText = "Plan Day"
@@ -11,8 +12,14 @@ const Home = () => {
     <div className="page-wrapper">
         <div className="page">
             <h1 className="h1">Home</h1>
-            <Button text={manageMealsButtonText}/>
-            <Button text={planDayButtonText}/>
+            <Link className="homepage-link" to="/managemeals">
+              <Button
+              text={manageMealsButtonText}/>
+            </Link>
+            <Link className="homepage-link" to="/planday">
+              <Button
+              text={planDayButtonText}/>
+            </Link>
             <Button text={manageCalendarButtonText}/>
         </div>
     </div>

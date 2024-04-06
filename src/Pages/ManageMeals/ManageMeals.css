@@ -8,14 +8,17 @@
     background-color: #AAAAAA;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    justify-content: space-between;
 }
 
 .btn {
     background-color: #50c878;
     font-size: 2em;
     margin: 5vh;
+}
+
+.input {
+    font-size: 2em;
 }
 
 .h1 {

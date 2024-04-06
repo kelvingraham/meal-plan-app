@@ -1,13 +1,30 @@
-//import logo from './logo.svg';
-//import Button from './Button';
+import { Route, Routes } from 'react-router-dom';
+import NavBar from './NavBar';
 import Home from './Pages/Home';
+import AddMeal from './Pages/AddMeal';
+import ManageMeals from './Pages/ManageMeals';
+import PlanDay from './Pages/PlanDay';
 import './App.css';
 
 function App() {
   return (
     <div className="page-wrapper">
         <div className="page">
-            <Home />
+          <NavBar />
+          <Routes>
+            <Route path = "/" element = {
+              <Home />
+            }/>
+            <Route path = "/managemeals" element = {
+              <ManageMeals />
+            }/>
+            <Route path = "/addmeal" element = {
+              <AddMeal />
+            }/>
+            <Route path = "/planday" element = {
+              <PlanDay />
+            }/>
+          </Routes>
         </div>
     </div>
   );

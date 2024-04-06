@@ -5,11 +5,11 @@ const handleClick = (e) => {
   console.log("Clicked button at "+e.clientX+", "+e.clientY+"!")
 }
 
-function Button({text}) {
+function Button({text,className="btn",onClick=handleClick}) {
   return (
     <button
-      className="btn"
-      onClick={(e) => handleClick(e)}>
+      className={className}
+      onClick={onClick}>
       {text}
     </button>
   );
