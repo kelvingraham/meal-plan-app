@@ -5,11 +5,8 @@ import './AddMeals.css';
 let addMealsButtonText = "Add Meals"
 let addMealsButtonClassName = "add-meals-btn"
 
-//let mealsMap = {}
-
 const allMeals = ["Apple Pie","Carrot Cake","Hamburger","Jumbalaya","Lasagna","Meringue Pie","Pea Soup","XXX","YYY","ZZZ"]
   .map(meal => ({name: meal, isSelected: false, isVisible: true}))
-  //.forEach((meal, i) => mealsMap[`${i}${i}`] = {name: meal, isSelected: false})
 
 const AddMeal = () => {
   const [mealsFiltered,setMealsFiltered] = useState(allMeals)
@@ -20,18 +17,6 @@ const AddMeal = () => {
     /* TODO investigate escaping regex */
 
     setRegexMatch(e.target.value)
-
-    // const updatedArr = mealsFiltered.map(meal => {
-    //   if (meal.name.toLowerCase().match(new RegExp(e.target.value.toLowerCase()))) {
-    //     return {
-    //       ...meal,isVisible: true
-    //     }
-    //   }
-    //   return {
-    //     ...meal,isVisible: false
-    //   }
-    // })
-    // setMealsFiltered(updatedArr)
       
     console.log("\""+e.target.value+"\" yields:")
     console.log(mealsFiltered)
