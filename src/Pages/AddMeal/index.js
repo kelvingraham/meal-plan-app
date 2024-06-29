@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Button from '../../Button';
 import './AddMeals.css';
 
-let addMealsButtonText = "Add Meals"
+let addMealsButtonText = "Add Meals to Plan"
 let addMealsButtonClassName = "add-meals-btn"
 
 const allMeals = ["Apple Pie","Carrot Cake","Hamburger","Jumbalaya","Lasagna","Meringue Pie","Pea Soup","XXX","YYY","ZZZ"]
@@ -13,8 +13,6 @@ const AddMeal = () => {
   const [regexMatch,setRegexMatch] = useState("")
 
   const handleOnTextInputChange = async (e) => { // updates filter
-
-    /* TODO investigate escaping regex */
 
     setRegexMatch(e.target.value)
       
